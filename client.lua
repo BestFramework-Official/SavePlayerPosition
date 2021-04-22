@@ -19,7 +19,7 @@ AddEventHandler('FW:lastPosition', function(PosX, PosY, PosZ)
     SetEntityCoords(GetPlayerPed(-1), PosX, PosY, PosZ, 1, 0, 0, 1)
 end)
 
--- Update player position and Save to database
+-- Update player position 
 Citizen.CreateThread(function()
     while true do 
         Citizen.Wait(5000)
